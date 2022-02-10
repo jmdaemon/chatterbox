@@ -2,11 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Buffer from './components/Buffer';
+import Network from './components/Network';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Network name="Libera Chat" channel="#libera" />
+    <Buffer />
   </React.StrictMode>,
   document.getElementById('root')
 );
